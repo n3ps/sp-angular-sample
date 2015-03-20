@@ -1,6 +1,6 @@
-﻿<div data-ng-controller="student as vm">
-    <div style="padding-left: 5px;">
-        <div class="form-group">
+﻿<div data-ng-controller="student as vm" class="data-entry">
+
+        <div class="form-group hidden">
             <label class="col-lg-2 control-label">ID</label>
             <div class="col-lg-10">
                 <input type="text" class="form-control input-sm" ng-model="newStudent.Id" disabled />
@@ -24,5 +24,5 @@
                 <a href="#" ng-click="vm.saveStudent(newStudent)" confirmation-needed class="btn btn-success btn-sm">Create</a>
             </div>
         </div>
-    </div>
+
 </div>

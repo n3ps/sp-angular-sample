@@ -1,6 +1,6 @@
-﻿<div data-ng-controller="course as vm">
-    <div style="padding-left: 5px;">
-        <div class="form-group">
+﻿<div data-ng-controller="course as vm" class="data-entry">
+    
+        <div class="form-group hidden">
             <label class="col-lg-2 control-label">ID</label>
             <div class="col-lg-10">
                 <input type="text" class="form-control input-sm" ng-model="newCourse.Id" disabled />
@@ -35,5 +35,5 @@
                 <a href="#" ng-click="vm.saveCourse(newCourse)" confirmation-needed class="btn btn-success btn-sm">Create</a>
             </div>
         </div>
-    </div>
+    
 </div>

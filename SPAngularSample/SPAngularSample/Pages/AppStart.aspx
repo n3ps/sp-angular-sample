@@ -8,6 +8,11 @@
 
 <%-- The markup and script in the following Content element will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
+
+    <!-- styling -->
+    <%--<link href="../Style%20Library/Content/normalize.css" rel="stylesheet" />--%>
+    <link href="../Style%20Library/Content/app.css" rel="stylesheet" />
+
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
     <script src="/_layouts/15/MicrosoftAjax.js"></script>
@@ -87,23 +92,12 @@
     
     <div data-ng-app="app">
         
-        <div id="pageWidth">
-            <div id="s4-workspace" class="ms-core-overlay">
-                <div id="s4-bodyContainer">
-                    <div data-ng-controller="header as vm"
-                        id="s4-titlerow" class="ms-dialogHidden" style="display: block;">
-                        <div id="titleAreaBox" class="ms-noList ms-table ms-core-tableNoSpace">
-                            <div id="titleAreaRow" class="ms-tableRow">
-                                <div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
-                                    <div class="ms-breadcrumb-top">
-                                        <div class="ms-breadcrumb-dropdownBox" style="display: none;">
-                                            <span id="DeltaBreadcrumbDropdown"></span>
-                                        </div>
-                                        <div class="ms-displayInline ms-core-navigation">
-                                            <div class="noindex ms-core-listMenu-horizontalBox"></div>
-                                        </div>
-                                    </div>
-                                    <h1 id="pageTitle" class="ms-core-pageTitle">
+        
+        
+        
+                    <div data-ng-controller="header as vm">
+
+                                    <h1>
                                         <span>
                                             <a href="{{vm.appHomeUrl}}" data-ng-bind-html="vm.appTitle"></a>
                                         </span>
@@ -118,40 +112,34 @@
                                             <span id="ms-pageTitleCurrentNode">{{vm.currentPageTitle}}</span>
                                         </span>
                                     </h1>
-                                </div>
-                            </div>
-                        </div>
+                            
                     </div>
-                    <div id="contentRow">
-                        <div data-ng-controller="quicklaunch as vm"
-                            id="sideNavBox" class="ms-dialogHidden ms-forceWrap ms-noList">
-                            <div class="ms-core-navigation" role="navigation">
-                                <a id="startNavigation" name="startNavigation"></a>
-                                <div class="ms-core-sideNavBox-removeLeftMargin">
-                                    <div class="noindex ms-core-listMenu-verticalBox">
-                                        <ul class="noindex ms-core-listMenu-root static">
-                                            <li class="static" data-ng-repeat="route in vm.navRoutes" data-ng-class="{selected: vm.isCurrent(route)}">
+
+
+                        <div data-ng-controller="quicklaunch as vm">
+
+
+
+                            <h2 class="spaced">Choose a function below</h2>
+                                        <ul class="tiled">
+                                            <li data-ng-repeat="route in vm.navRoutes" data-ng-class="{selected: vm.isCurrent(route)}">
                                                 <a href="#{{route.url}}"
                                                     data-ng-bind-html="route.config.settings.content"
-                                                    class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"
-                                                    data-ng-class="{selected:vm.isCurrent(route), 'ms-core-listMenu-selected':vm.isCurrent(route)}"></a>
+                                                
+                                                    data-ng-class="{selected:vm.isCurrent(route), 'selected':vm.isCurrent(route)}"></a>
                                             </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                                        </ul>                                    
+                                
                         </div>
-                        <div id="contentBox" aria-live="polite" aria-relevant="all">
-                            <div data-ng-controller="shell as vm">
+
+                            <div data-ng-controller="shell as vm" class="spaced">
                                 <section id="content" class="view-container">
                                     <div data-ng-view class="shuffle-animation"></div>
                                 </section>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        
+                    
+        
 
     </div>
 </asp:Content>
