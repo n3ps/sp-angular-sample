@@ -1,0 +1,44 @@
+﻿<div data-ng-controller="course as vm">
+    <table border="0" cellspacing="0" cellpadding="1" class="ms-listviewtable">
+        <thead>
+            <tr valign="top" class="ms-viewheadertr ms-vhltr">
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    <div displayname="Title" class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Id</a>
+                    </div>
+                </th>
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    <div displayname="Title" class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Course Name</a>
+                    </div>
+                </th>
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    <div displayname="Title" class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Location</a>
+                    </div>
+                </th>
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    Edit | Delete
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ms-itmHoverEnabled ms-itmhover"
+                data-ng-repeat="item in vm.courses">
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{item.Id}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{item.Title}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{item.Location}}</div>
+                </td>
+                <td>
+                    <a href="#" ng-click="vm.edit(item)">Edit</a>
+                    <a href="#" ng-click="vm.deleteCourse(item.Id)" confirmation-needed>Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

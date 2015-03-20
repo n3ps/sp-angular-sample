@@ -1,0 +1,39 @@
+﻿<div data-ng-controller="course as vm">
+    <div style="padding-left: 5px;">
+        <div class="form-group">
+            <label class="col-lg-2 control-label">ID</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="newCourse.Id" disabled />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Course Name</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="newCourse.CourseName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Location</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="newCourse.Location" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Course Topics</label>
+            <div class="col-lg-10">
+                <form ng-submit="addCourseTopic()">
+                    <input type="text" class="form-control input-sm" name="newCourseTopic"/>
+                </form>
+            </div>
+            <div id="courseTopics" class="col-lg-10">
+                <ul id="courseTopicList"></ul>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <a href="#" ng-click="clear()" class="btn btn-default btn-sm">Clear</a>
+                <a href="#" ng-click="vm.saveCourse(newCourse)" confirmation-needed class="btn btn-success btn-sm">Create</a>
+            </div>
+        </div>
+    </div>
+</div>

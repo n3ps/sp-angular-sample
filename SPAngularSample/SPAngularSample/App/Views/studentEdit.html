@@ -1,0 +1,28 @@
+﻿<div data-ng-controller="student as vm">
+    <div style="padding-left: 5px;">
+        <div class="form-group">
+            <label class="col-lg-2 control-label">ID</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="vm.Student.Id" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">First Name</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="vm.Student.FirstName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Last Name</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control input-sm" ng-model="vm.Student.LastName"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <a href="#" ng-click="clear()" class="btn btn-default btn-sm">Clear</a>
+                <a href="#" ng-click="vm.updateStudent(vm.Student)" confirmation-needed class="btn btn-success btn-sm">Save</a>
+            </div>
+        </div>
+    </div>
+</div>

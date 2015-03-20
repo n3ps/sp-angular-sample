@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="App\Layout\header.html" Url="App/Layout/header.html" ReplaceContent="TRUE" />
+    <File Path="App\Layout\header.js" Url="App/Layout/header.js" ReplaceContent="TRUE" />
+    <File Path="App\Layout\quicklaunch.html" Url="App/Layout/quicklaunch.html" ReplaceContent="TRUE" />
+    <File Path="App\Layout\quicklaunch.js" Url="App/Layout/quicklaunch.js" ReplaceContent="TRUE" />
+    <File Path="App\Layout\shell.html" Url="App/Layout/shell.html" ReplaceContent="TRUE" />
+    <File Path="App\Layout\shell.js" Url="App/Layout/shell.js" ReplaceContent="TRUE" />
+    <File Path="App\Models\testDataModel.js" Url="App/Models/testDataModel.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\spContext.js" Url="App/Services/spContext.js" ReplaceContent="TRUE" />
+    <File Path="App\Util\jquery-extensions.js" Url="App/Util/jquery-extensions.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\dashboard.html" Url="App/Views/dashboard.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\testDataCreate.html" Url="App/Views/testDataCreate.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\testDataList.html" Url="App/Views/testDataList.html" ReplaceContent="TRUE" />
+    <File Path="App\Common\common.js" Url="App/Common/common.js" ReplaceContent="TRUE" />
+    <File Path="App\Common\logger.js" Url="App/Common/logger.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\dashboard.js" Url="App/Controllers/dashboard.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\testData.js" Url="App/Controllers/testData.js" ReplaceContent="TRUE" />
+    <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
+    <File Path="App\config.angular.http.js" Url="App/config.angular.http.js" ReplaceContent="TRUE" />
+    <File Path="App\config.exceptionHandler.js" Url="App/config.exceptionHandler.js" ReplaceContent="TRUE" />
+    <File Path="App\config.js" Url="App/config.js" ReplaceContent="TRUE" />
+    <File Path="App\config.route.js" Url="App/config.route.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\testDataEdit.html" Url="App/Views/testDataEdit.html" ReplaceContent="TRUE" />
+    <File Path="App\Services\testDataService.js" Url="App/Services/testDataService.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\provinceService.js" Url="App/Services/provinceService.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\courseList.html" Url="App/Views/courseList.html" ReplaceContent="TRUE" />
+    <File Path="App\Services\courseService.js" Url="App/Services/courseService.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\course.js" Url="App/Controllers/course.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\courseCreate.html" Url="App/Views/courseCreate.html" ReplaceContent="TRUE" />
+    <File Path="App\Services\courseTopicService.js" Url="App/Services/courseTopicService.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\studentService.js" Url="App/Services/studentService.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\student.js" Url="App/Controllers/student.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\studentList.html" Url="App/Views/studentList.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\studentCreate.html" Url="App/Views/studentCreate.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\studentEdit.html" Url="App/Views/studentEdit.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
